@@ -11,4 +11,4 @@ COPY . .
 # expose port 3000
 EXPOSE 3000
 
-CMD ["npx", "elm-live", "src/Main.elm", "--hot", "--dir=static", "--port=3000", "--", "--output=static/main.js"]
+CMD ["npx", "elm-live", "src/Main.elm", "--hot", "--dir=static", "--host=0.0.0.0", "--port=3000", "--", "--output=static/main.js"]
